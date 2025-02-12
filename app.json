@@ -1,0 +1,6 @@
+{
+  "name": "Website Digital Marketing Data Sync",
+  "description": "Application that connects to a spreadsheet of URLs, queries information on those URLs from API modules and then syncs the data to the same spreadsheet.",
+  "repository": "",
+  "addons": []
+}

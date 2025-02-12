@@ -1,0 +1,27 @@
+{
+  "require" : {
+    "silex/silex": "^2.0.4",
+    "monolog/monolog": "^2.9",
+    "twig/twig": "^2.0",
+    "symfony/twig-bridge": "^3",
+    "google/apiclient": "^2.14"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  },
+  "scripts": {
+    "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+  },
+  "extra": {
+    "google/apiclient-services": [
+        "Sheets",
+        "PagespeedInsights",
+        "SearchConsole"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+        "App\\": "src/"
+    }
+  }
+}
